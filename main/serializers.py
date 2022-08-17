@@ -45,7 +45,9 @@ class WorkStreamSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = WorkStream
-        exclude = ('id', )
+        exclude = ('id', 'current_gtc_graph', 'current_gtc_num',
+                   'current_stable_num', 'current_stable_graph',
+                   'all_time_contributors')
 
         read_only_fields = [
             'current_gtc_graph', 'current_gtc_num', 'current_stable_num',

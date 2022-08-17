@@ -7,6 +7,7 @@ class Stats(models.Model):
     stable_coin_balance = models.JSONField(default=dict)
     gtc_graph = models.JSONField(default=dict)
     stable_graph = models.JSONField(default=dict)
+    all_time_contributors = models.JSONField(default=dict)
 
 
 class WorkStream(models.Model):
