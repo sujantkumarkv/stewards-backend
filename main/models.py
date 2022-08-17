@@ -2,6 +2,13 @@ from django.db import models
 from django.contrib.auth.models import User
 
 
+class Stats(models.Model):
+    gtc_balance = models.JSONField(default=dict)
+    stable_coin_balance = models.JSONField(default=dict)
+    gtc_graph = models.JSONField(default=dict)
+    stable_graph = models.JSONField(default=dict)
+
+
 class WorkStream(models.Model):
     short_name = models.CharField(max_length=6, unique=True)
     name = models.CharField(max_length=200)
@@ -12,6 +19,7 @@ class WorkStream(models.Model):
     current_stable_num = models.URLField(max_length=400)
     current_stable_graph = models.URLField(max_length=400)
     all_time_contributors = models.URLField(max_length=400)
+    stats = models.OneToOneField(Stats, on_delete=models.CASCADE, null=True)
 
     def __str__(self):
         return self.short_name

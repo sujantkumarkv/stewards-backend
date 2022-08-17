@@ -1,4 +1,4 @@
-from .models import Steward, WorkStream
+from .models import Steward, WorkStream, Stats
 from rest_framework import serializers
 
 
@@ -34,14 +34,23 @@ class StewardSerializer(serializers.ModelSerializer):
         ]
 
 
+class StatsSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Stats
+        exclude = ('id', )
+        files = ['gtc_balance']
+
+
 class WorkStreamSerializer(serializers.ModelSerializer):
+    stats = StatsSerializer(read_only=True)
+
     class Meta:
         model = WorkStream
         exclude = ('id', )
 
         read_only_fields = [
             'current_gtc_graph', 'current_gtc_num', 'current_stable_num',
-            'current_stable_graph', 'all_time_contributors'
+            'current_stable_graph', 'all_time_contributors', 'stats'
         ]
 
     # TODO: Add Method Field to give leads

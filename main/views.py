@@ -1,6 +1,6 @@
 from rest_framework import generics
-from .models import Steward, WorkStream
-from .serializers import StewardSerializer, WorkStreamSerializer
+from .models import Steward, WorkStream, Stats
+from .serializers import StewardSerializer, WorkStreamSerializer, StatsSerializer
 
 
 class StewardView(generics.RetrieveUpdateDestroyAPIView):

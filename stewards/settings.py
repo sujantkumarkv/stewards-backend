@@ -69,6 +69,7 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'django.contrib.postgres',
     'django_filters',
+    'background_task',
 ]
 
 MIDDLEWARE = [
