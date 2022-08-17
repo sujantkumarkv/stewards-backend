@@ -38,7 +38,6 @@ class StatsSerializer(serializers.ModelSerializer):
     class Meta:
         model = Stats
         exclude = ('id', )
-        files = ['gtc_balance']
 
 
 class WorkStreamSerializer(serializers.ModelSerializer):
