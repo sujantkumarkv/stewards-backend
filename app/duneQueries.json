@@ -1,0 +1,146 @@
+[
+    {
+        "stats": {
+            "gtc_balance": {
+                "value": "0",
+                "query_id": "1157870"
+            },
+            "stable_coin_balance": {
+                "value": "0",
+                "query_id": "1158098"
+            },
+            "gtc_graph": {
+                "value": "0",
+                "dune_url": "https://dune.com/queries/1157870/1977623"
+            },
+            "stable_graph": {
+                "value": "0",
+                "dune_url": "https://dune.com/queries/1158098/1978004"
+            },
+            "all_time_contributors": {
+                "value": "0",
+                "dune_url": "https://dune.com/queries/676111/1254302"
+
+            }
+        },
+        "short_name": "FDD",
+        "name": "Fraud Detection & Defense",
+        "description": "Defend Gitcoin from threats to its legitimacy, credible neutrality, and sustainability",
+        "budget_link": "https://dune.com/embeds/1074486/1843476/124338dc-8eba-4fad-9974-02b13c7deed9"
+    },
+    {
+        "stats": {
+            "gtc_balance": {
+                "value": "0"
+            },
+            "stable_coin_balance": {
+                "value": "0"
+            },
+            "gtc_graph": {
+                "value": "0"
+            },
+            "stable_graph": {
+                "value": "0"
+            },
+            "all_time_contributors": {
+                "value": "0"
+            }
+        },
+        "short_name": "PGF",
+        "name": "Public Goods Funding",
+        "description": "Raise awareness and funding for digital public goods and Gitcoin grants",
+        "budget_link": "https://dune.com/embeds/1074330/1843176/e6a89acd-1ff1-49a2-ba76-cfb90f4869ad"
+    },
+    {
+        "stats": {
+            "gtc_balance": {
+                "value": "0"
+            },
+            "stable_coin_balance": {
+                "value": "0"
+            },
+            "gtc_graph": {
+                "value": "0"
+            },
+            "stable_graph": {
+                "value": "0"
+            },
+            "all_time_contributors": {
+                "value": "0"
+            }
+        },
+        "short_name": "MC",
+        "name": "Moonshot Collective",
+        "description": "Build and experiment with innovative solutions that add value to Gitcoin’s vision and essential intents",
+        "budget_link": "https://dune.com/embeds/1074582/1843534/66097f19-ee95-4f09-86cf-4318143eec89"
+    },
+    {
+        "stats": {
+            "gtc_balance": {
+                "value": "0"
+            },
+            "stable_coin_balance": {
+                "value": "0"
+            },
+            "gtc_graph": {
+                "value": "0"
+            },
+            "stable_graph": {
+                "value": "0"
+            },
+            "all_time_contributors": {
+                "value": "0"
+            }
+        },
+        "short_name": "MMM",
+        "name": "Merch, Memes & Marketing",
+        "description": "Generate curiosity, hype and engagement around GitcoinDAO and our core mission.",
+        "budget_link": "https://dune.com/embeds/1074218/1842957/6f7e13d1-3259-4df4-866a-be053932170b"
+    },
+    {
+        "stats": {
+            "gtc_balance": {
+                "value": "0"
+            },
+            "stable_coin_balance": {
+                "value": "0"
+            },
+            "gtc_graph": {
+                "value": "0"
+            },
+            "stable_graph": {
+                "value": "0"
+            },
+            "all_time_contributors": {
+                "value": "0"
+            }
+        },
+        "short_name": "daoops",
+        "name": "DAO Ops",
+        "description": "Operationalize the DAO including legal, accounting, people operations, support and governance",
+        "budget_link": "https://dune.com/embeds/1074422/1843295/e0aaf6de-b6d3-4431-8d0f-3b1dea5785a8"
+    },
+    {
+        "stats": {
+            "gtc_balance": {
+                "value": "0"
+            },
+            "stable_coin_balance": {
+                "value": "0"
+            },
+            "gtc_graph": {
+                "value": "0"
+            },
+            "stable_graph": {
+                "value": "0"
+            },
+            "all_time_contributors": {
+                "value": "0"
+            }
+        },
+        "short_name": "gpc",
+        "name": "GPC",
+        "description": "Open-source technology to scale plural capital provision",
+        "budget_link": "https://dune.com"
+    }
+]
