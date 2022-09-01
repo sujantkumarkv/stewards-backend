@@ -17,12 +17,13 @@ def duneQueryResults(query_id):
 
 
 def query_id_from_url(dune_url):
-    int(dune_url.split('/')[4])
+    return int(dune_url.split('/')[4])
 
 
-@background(schedule=5)
+@background
 def update_workstreams():
     workstreams = WorkStream.objects.all()
+    print("All Workstreams", workstreams)
     for w in workstreams:
         print(f"Updating Workstream: {w.short_name}")
         w.stats.gtc_balance = duneQueryResults(
@@ -35,6 +36,8 @@ def update_workstreams():
             query_id_from_url(w.current_gtc_graph))
         w.stats.all_time_contributors = duneQueryResults(
             query_id_from_url(w.all_time_contributors))
+        w.stats.save()
+        w.save()
 
 
-update_workstreams(repeat=tasks.Task.HOURLY)
+update_workstreams(schedule=60, repeat=3600)
